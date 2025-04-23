@@ -1,0 +1,6 @@
+name: HyperCore
+version: '0'
+main: HyperCore.Main.HyperCore
+api-version: '1.21'
+authors: [ SEAMO ]
+description: My Plugin
