@@ -2,7 +2,7 @@ package HyperCore.Entity.Creeper;
 
 import HyperCore.Main.Hyper;
 import HyperCore.Main.HyperCore;
-import HyperCore.Value.AllEntity;
+import HyperCore.Event.Value.AllEntity;
 import org.bukkit.Location;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Creeper;
@@ -10,7 +10,6 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Projectile;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;

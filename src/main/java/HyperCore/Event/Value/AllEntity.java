@@ -1,4 +1,4 @@
-package HyperCore.Value;
+package HyperCore.Event.Value;
 
 import org.bukkit.entity.EntityType;
 
