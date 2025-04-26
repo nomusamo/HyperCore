@@ -20,5 +20,4 @@ public final class HyperCore extends JavaPlugin {
     public void onDisable() {
         getLogger().info("HyperCore is Disabled");
     }
-
 }
