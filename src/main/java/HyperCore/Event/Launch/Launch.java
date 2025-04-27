@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Launch {
 
-    public static void launch(LivingEntity skeleton, Location shooterLoc) {
+    public static void launch(LivingEntity skeleton) {
         new BukkitRunnable() {
             int ticks = 0;
             final Random random = new Random();

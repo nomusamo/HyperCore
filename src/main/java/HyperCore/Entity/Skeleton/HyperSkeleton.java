@@ -9,9 +9,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityTargetEvent;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.util.Vector;
-
-import java.util.Random;
 
 public class HyperSkeleton extends Hyper {
 
@@ -51,6 +48,6 @@ public class HyperSkeleton extends Hyper {
         Location shooterLoc = shooter.getLocation();
         skeleton.teleport(shooterLoc);
 
-        Launch.launch(skeleton, shooterLoc);
+        Launch.launch(skeleton);
     }
 }
