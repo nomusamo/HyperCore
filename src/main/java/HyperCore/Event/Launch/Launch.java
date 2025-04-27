@@ -1,7 +1,6 @@
 package HyperCore.Event.Launch;
 
 import HyperCore.Main.HyperCore;
-import org.bukkit.Location;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.scheduler.BukkitRunnable;
