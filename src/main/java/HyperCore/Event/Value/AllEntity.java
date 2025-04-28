@@ -16,7 +16,7 @@ public class AllEntity {
     // 초기화 메서드
     static {
         for (EntityType entityType : EntityType.values()) {
-            if (entityType.isAlive()) { // 라이빙 엔티티인지 확인
+            if (entityType.isAlive() && entityType != EntityType.PLAYER) { // 라이빙 엔티티인지 확인 *추가 플레이어면 넘기기
                 LIVING_ENTITIES.add(entityType);
             }
         }
