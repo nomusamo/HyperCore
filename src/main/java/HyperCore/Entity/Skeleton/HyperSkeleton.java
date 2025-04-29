@@ -47,7 +47,6 @@ public class HyperSkeleton extends Hyper {
         // 스켈레톤을 shooter 위치로 TP
         Location shooterLoc = shooter.getLocation();
         skeleton.teleport(shooterLoc);
-
-        Launch.launch(skeleton);
+        Launch.launch(skeleton, Arrow.class);
     }
 }
