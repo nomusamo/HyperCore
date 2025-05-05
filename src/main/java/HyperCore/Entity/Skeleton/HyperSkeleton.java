@@ -12,6 +12,9 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class HyperSkeleton extends Hyper {
 
+    public static int arrowTicks = 1;
+    public static int arrow = 10;
+
     @EventHandler
     public void onSkeletonTarget(EntityTargetEvent event) {
         if (event.getEntityType() == EntityType.SKELETON && event.getTarget() instanceof LivingEntity) {
@@ -27,12 +30,12 @@ public class HyperSkeleton extends Hyper {
 
                     Location eyeLocation = skeleton.getEyeLocation();
                     Location targetLocation = target.getLocation().add(0, target.getHeight() / 2, 0);
-                    for (int i = 0; i < 20; i++) {
+                    for (int i = 0; i < arrow; i++) {
                         Arrow arrow = skeleton.launchProjectile(Arrow.class);
                         arrow.setVelocity(targetLocation.toVector().subtract(eyeLocation.toVector()).normalize().multiply(3));
                     }
                 }
-            }.runTaskTimer(HyperCore.getInstance(), 0L, 1); // 1 tick = 0.05 seconds, 20 ticks = 1 second
+            }.runTaskTimer(HyperCore.getInstance(), 0L, arrowTicks); // 1 tick = 0.05 seconds, 20 ticks = 1 second
         }
     }
 
